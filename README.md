@@ -73,7 +73,7 @@ Clone the project
 
 Go to the project directory => src => Subscription => WeeklySubscription
 
-To Test Input go to line 138, change target value accordingly and run the program.
+To Test Input go to line 138, change budget value accordingly and run the program.
 
 
 ## Performed Test Case Output

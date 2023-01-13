@@ -19,7 +19,7 @@ public class WeeklySubscription {
         }
     }
 
-    static void findCombination(int index, List<Float> weeklyExpense, float target, List<Float> temp) {
+    static void findCombination(int index, List<Float> weeklyExpense, float budget, List<Float> temp) {
         // recursive method to find all combination
 
 
@@ -27,12 +27,12 @@ public class WeeklySubscription {
             allCombinations.add(new ArrayList<>(temp));
             return;
         }
-        if (weeklyExpense.get(index) <= target) {
+        if (weeklyExpense.get(index) <= budget) {
             temp.add(weeklyExpense.get(index));
-            findCombination(index + 1, weeklyExpense, target - weeklyExpense.get(index), temp);
+            findCombination(index + 1, weeklyExpense, budget - weeklyExpense.get(index), temp);
             temp.remove(temp.size() - 1);
         }
-        findCombination(index + 1, weeklyExpense, target, temp);
+        findCombination(index + 1, weeklyExpense, budget, temp);
     }
 
     static int lengthOf() {
@@ -135,8 +135,8 @@ public class WeeklySubscription {
             ArrayList<Float> weeklyExpense = new ArrayList<Float>(weekly);
 
             /* --------- Now checking possible combinations for given Budget------------ */
-            float target = 40;
-            findCombination(0, weeklyExpense, target, new ArrayList<>()); // doing recursive call for budget 40
+            float budget = 40;
+            findCombination(0, weeklyExpense, budget, new ArrayList<>()); // doing recursive call for budget 40
 
             /*
              * There could be many possibilities but i have to find maximum length newspaper
