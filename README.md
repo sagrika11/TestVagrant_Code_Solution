@@ -68,7 +68,7 @@ Possible outputcomes will be : Not Enough Budget!!
 Clone the project
 
 ```bash
-  git clone https://github.com/amritmaurya1504/Chit_Chat.git
+  git clone https://github.com/sagrika11/TestVagrant_Code_Solution.git
 ```
 
 Go to the project directory => src => Subscription => WeeklySubscription
