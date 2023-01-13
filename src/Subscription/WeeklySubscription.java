@@ -135,7 +135,7 @@ public class WeeklySubscription {
             ArrayList<Float> weeklyExpense = new ArrayList<Float>(weekly);
 
             /* --------- Now checking possible combinations for given Budget------------ */
-            float target = 10;
+            float target = 40;
             findCombination(0, weeklyExpense, target, new ArrayList<>()); // doing recursive call for budget 40
 
             /*
